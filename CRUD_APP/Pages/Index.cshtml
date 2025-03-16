@@ -4,7 +4,7 @@
 <link rel="stylesheet" href="~/css/site.css" />
 
 <p>
-    <a asp-page="Create" class="create-button">Create New</a>
+    <a asp-page="Create" class="button button-success">Create New</a>
 </p>
 
 <div class="table-container">
@@ -31,9 +31,9 @@
                         @Html.DisplayFor(modelItem => item.Email)
                         </td>
                         <td class="action-links">
-                            <a asp-page="./Edit" asp-route-id="@item.ID">Edit</a> |
-                            <a asp-page="./Details" asp-route-id="@item.ID">Details</a> |
-                            <a asp-page="./Delete" asp-route-id="@item.ID">Delete</a>
+                            <a asp-page="./Edit" asp-route-id="@item.ID" class="button">Edit</a>
+                            <a asp-page="./Details" asp-route-id="@item.ID" class="button button-secondary">Details</a>
+                            <a asp-page="./Delete" asp-route-id="@item.ID" class="button button-danger">Delete</a>
                         </td>
                     </tr>
             }
